@@ -1,0 +1,26 @@
+{
+    "name": "docsify-mermaid-zoom",
+    "version": "1.0.0",
+    "description": "Docsify mermaid zoom",
+    "main": "dist/docsify-mermaid-zoom.js",
+    "scripts": {
+      "build": "rollup -c"
+    },
+    "files": [
+      "dist/docsify-mermaid-pattern.js"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/corentinleberre/docsify-mermaid-zoom.git"
+    },
+    "keywords": [
+      "Docsify",
+      "Mermaid"
+    ],
+    "author": "Corentin Le Berre",
+    "license": "ISC",
+    "devDependencies": {
+      "rollup": "^2.63.0",
+      "rollup-plugin-terser": "^7.0.2"
+    }
+  }
