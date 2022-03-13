@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Docsify-mermaid-zoom</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'Docsify-mermaid-zoom',
+      loadSidebar: false,
+      hideSidebar: true
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify"></script>
+  <script src="//cdn.jsdelivr.net/npm/d3@7"></script>
+
+  <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.js"></script>
+  <script>
+    let plugin = (hook, vm) => {
+
+      hook.afterEach(function (html, next) {
+          let htmlElement = document.createElement('div');
+          htmlElement.innerHTML = html;
+  
+          htmlElement.querySelectorAll('pre[data-lang=mermaid]').forEach((element) => {
+              // Create a <div class="mermaid"> to replace the <pre> 
+              let replacement = document.createElement('div');
+              replacement.textContent = element.textContent;
+              replacement.classList.add('mermaid');
+  
+              // Replace
+              element.parentNode.replaceChild(replacement, element);
+          });
+  
+          next(htmlElement.innerHTML);
+      });
+  
+      hook.doneEach(function () {
+          mermaid.init({}, '.mermaid');
+      });
+    };
+
+    if (!window.$docsify) {
+        window.$docsify = {}
+    }
+
+    window.$docsify.plugins = (window.$docsify.plugins || []).concat(plugin)
+  </script>
+  <script>mermaid.initialize({ startOnLoad: true });</script>
+
+  <script type="module" src="./index.js"></script>
+
+</body>
+</html>

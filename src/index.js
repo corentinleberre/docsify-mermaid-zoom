@@ -1,5 +1,5 @@
-import elementZoom from "./mermaid-zoom";
+import { mermaidZoom } from './zoom.js'
 
 const docsify = window.$docsify;
 
-docsify?.plugins?.push(!!docsify?.elementZoom ? elementZoom(...Object.values(docsify.elementZoom)) : elementZoom());
+docsify?.plugins?.push(!!docsify?.mermaidZoom ? mermaidZoom(...Object.values(docsify.mermaidZoom)) : mermaidZoom());
