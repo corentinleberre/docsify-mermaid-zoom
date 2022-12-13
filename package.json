@@ -1,15 +1,7 @@
 {
   "name": "docsify-mermaid-zoom",
-  "version": "2.0.0",
-  "description": "Docsify mermaid zoom",
-  "main": "dist/docsify-mermaid-zoom.js",
-  "scripts": {
-    "start": "docsify serve src",
-    "build": "rollup -c"
-  },
-  "files": [
-    "dist/index.js"
-  ],
+  "version": "2.1.0",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/corentinleberre/docsify-mermaid-zoom.git"
@@ -20,8 +12,12 @@
   ],
   "author": "Corentin Le Berre",
   "license": "MIT",
+  "scripts": {
+    "dev": "vite serve src",
+    "build": "vite build --config vite-config.js"
+  },
   "devDependencies": {
-    "rollup": "^2.63.0",
-    "rollup-plugin-terser": "^7.0.2"
+    "vite": "^4.0.1",
+    "vitest": "^0.25.7"
   }
 }
