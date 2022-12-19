@@ -45,7 +45,3 @@ Configurations :
     }
   </script>
 ```
-
-## Demo
-
-A demo is available [here](https://corentinleberre.github.io/docsify-mermaid-zoom/src/#/)
