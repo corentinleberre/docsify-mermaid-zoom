@@ -1,4 +1,4 @@
-import { enableZoomSvg, resetZoomSvg } from './svg.js'
+import { enableZoomSvg, resetZoomSvg } from './plugin/svg.js'
 
 const mermaidZoom = (elementId = ".mermaid", minimumScale = 1, maximumScale = 5, zoomMenu = true) => (hook) => hook.doneEach(() => {
   const nodes = document.querySelectorAll(elementId);

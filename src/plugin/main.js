@@ -1,4 +1,4 @@
-import mermaidZoom from "./docsify-mermaid-zoom";
+import { mermaidZoom } from "./docsify-mermaid-zoom";
 
 const docsify = window.$docsify || {};
 
