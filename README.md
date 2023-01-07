@@ -1,10 +1,13 @@
 # Docsify-mermaid-zoom
 
-Docsify-mermaid-zoom is a docsify plugin which allows to zoom in mermaid diagramms.
+A simple Docsify plugin enabling zoom in **mermaid diagrams** (and svg).
+
+![Demo](assets/demo.png)
 
 ## How to use
 
-Dependencies :
+### Dependencies
+
 * [mermaid-docsify](https://github.com/Leward/mermaid-docsify/])
 * [D3.js](https://d3js.org)
 
@@ -26,10 +29,16 @@ Add the dependencies and plugin to `index.html`
 <script type="module" src="//unpkg.com/docsify-mermaid-zoom/dist/index.js"></script>
 ```
 
-By default, zoom is only enabled on mermaid diagramms but can be use with others types of svg. 
+By default, zoom is only enabled on mermaid diagramms but can be use with others types of svg.
 You can configure min/max scale and disable the zoom pannel.
 
-Configurations : 
+The pannel provide **two button**. The first button activates the zoom feature on the mermaid diagram. The second one allows to reset the zoom.
+This pannel can be disable.
+
+You can also activate the zoom on the diagram by **double clicking on it**.
+The diagram will return to its original scale once it leaves the viewport on your screen.
+
+### Configurations
 
 ```html
 <script>

@@ -1,8 +1,11 @@
-# Docsify-Mermaid-Zoom
+# Docsify-mermaid-zoom
 
-> Sample diagramms from https://mermaid.live/
+A simple Docsify plugin which allows to zoom in mermaid diagrams.
+
+> Sample diagrams from [https://mermaid.live/](https://mermaid.live/)
 
 ## Flow Chart
+
 ```mermaid
 graph TD
     A[Christmas] -->|Get money| B(Go shopping)
@@ -13,6 +16,7 @@ graph TD
 ```
 
 ## Sequence Diagram
+
 ```mermaid
 sequenceDiagram
     Alice->>+John: Hello John, how are you?
@@ -22,6 +26,7 @@ sequenceDiagram
 ```
 
 ## Class Diagram
+
 ```mermaid
 classDiagram
     Animal <|-- Duck
@@ -47,6 +52,7 @@ classDiagram
 ```
 
 ## State diagram
+
 ```mermaid
 stateDiagram-v2
     [*] --> Still
@@ -58,6 +64,7 @@ stateDiagram-v2
 ```
 
 ## Gantt Chart
+
 ```mermaid
 gantt
     title A Gantt Diagram
@@ -71,6 +78,7 @@ gantt
 ```
 
 ## Pie Chart
+
 ```mermaid
 pie title Pets adopted by volunteers
     "Dogs" : 386
@@ -79,6 +87,7 @@ pie title Pets adopted by volunteers
 ```
 
 ## ER Diagram
+
 ```mermaid
 erDiagram
           CUSTOMER }|..|{ DELIVERY-ADDRESS : has
@@ -92,6 +101,7 @@ erDiagram
 ```
 
 ## User Journey
+
 ```mermaid
   journey
     title My working day
