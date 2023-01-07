@@ -22,10 +22,6 @@ Add the dependencies and plugin to `index.html`
 <script>mermaid.initialize({ startOnLoad: true });</script>
 <script src="//cdn.jsdelivr.net/npm/d3@7"></script>
 
-<!-- import Docsify-Mermaid-Zoom as CommonJS module -->
-<script src="//unpkg.com/docsify-mermaid-zoom/dist/index.cjs"></script>
-
-<!-- Or import Docsify-Mermaid-Zoom as ESModule -->
 <script type="module" src="//unpkg.com/docsify-mermaid-zoom/dist/index.js"></script>
 ```
 
@@ -38,7 +34,7 @@ This pannel can be disable.
 You can also activate the zoom on the diagram by **double clicking on it**.
 The diagram will return to its original scale once it leaves the viewport on your screen.
 
-### Configurations
+### Optional configuration
 
 ```html
 <script>
