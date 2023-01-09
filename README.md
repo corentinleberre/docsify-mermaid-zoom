@@ -4,6 +4,8 @@ A simple Docsify plugin enabling zoom in mermaid diagrams (and svg).
 
 ![Demo](assets/demo.png)
 
+👉 You can test the plugin [here](https://corentinleberre.github.io/docsify-mermaid-zoom/)
+
 ## How to use
 
 ### Dependencies
@@ -50,3 +52,11 @@ The diagram will return to its original scale once it leaves the viewport on you
     }
   </script>
 ```
+
+## License
+
+The code in this repository is licensed under the MIT License. See the LICENSE file for more information.
+
+## Contributing
+
+If you found a bug in my code or want to improve this plugin, please feel free to open a pull request or an issue. I am always looking for ways to improve my solutions and I appreciate any feedback or contributions.
