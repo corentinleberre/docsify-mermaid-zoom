@@ -1,7 +1,8 @@
 {
   "name": "docsify-mermaid-zoom",
-  "version": "2.2.0",
+  "version": "2.2.3",
   "type": "module",
+  "main": "dist/docsify-mermaid-zoom.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/corentinleberre/docsify-mermaid-zoom.git"
