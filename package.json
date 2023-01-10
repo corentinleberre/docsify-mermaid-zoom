@@ -1,6 +1,6 @@
 {
   "name": "docsify-mermaid-zoom",
-  "version": "2.2.4",
+  "version": "2.2.5",
   "type": "module",
   "main": "dist/docsify-mermaid-zoom.js",
   "repository": {
