@@ -21,4 +21,4 @@ const resetZoomSvg = `
     </svg>
 `;
 
-export { enableZoomSvg, resetZoomSvg }
+export { enableZoomSvg, resetZoomSvg };

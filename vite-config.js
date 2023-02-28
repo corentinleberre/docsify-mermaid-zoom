@@ -6,7 +6,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, "src/plugin/main.js"),
       fileName: "docsify-mermaid-zoom",
-      formats: ['es'],
+      formats: ["es"],
     },
   },
 });
