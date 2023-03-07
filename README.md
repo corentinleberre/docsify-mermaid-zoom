@@ -18,8 +18,8 @@ Add the dependencies and plugin to `index.html`
 ```html
 <!-- Import D3.js -->
 <script src="//cdn.jsdelivr.net/npm/d3@7"></script>
-<!-- Import Mermaid -->
-<script src="//unpkg.com/mermaid/dist/mermaid.js"></script>
+<!-- Import Mermaid (⚠️ Maximum V9 for now)-->
+<script src="//cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.js"></script>
 <script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"></script>
 <script>mermaid.initialize({ startOnLoad: true });</script>
 <!-- Import Docsify-mermaid-zoom -->
