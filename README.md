@@ -1,6 +1,6 @@
 # Docsify-mermaid-zoom
 
-A simple Docsify plugin enabling zoom in mermaid diagrams (and svg).
+A simple Docsify plugin enabling zoom in mermaid diagrams.
 
 ![Demo](assets/demo.png)
 
@@ -10,23 +10,33 @@ A simple Docsify plugin enabling zoom in mermaid diagrams (and svg).
 
 ### Dependencies
 
-* [mermaid-docsify](https://github.com/Leward/mermaid-docsify/])
-* [D3.js](https://d3js.org)
+- [mermaid-docsify](https://github.com/Leward/mermaid-docsify/])
+- [D3.js](https://d3js.org)
 
 Add the dependencies and plugin to `index.html`
 
 ```html
+<script>
+  window.$docsify = {
+    ...,
+    mermaidConfig: {
+      querySelector: ".mermaid",
+    }
+    ...,
+  };
+</script>
 <!-- Import D3.js -->
 <script src="//cdn.jsdelivr.net/npm/d3@7"></script>
 <!-- Import Mermaid (⚠️ Maximum V9 for now)-->
 <script src="//cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.js"></script>
 <script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"></script>
-<script>mermaid.initialize({ startOnLoad: true });</script>
+<script>
+  mermaid.initialize({ startOnLoad: true });
+</script>
 <!-- Import Docsify-mermaid-zoom -->
 <script src="//unpkg.com/docsify-mermaid-zoom/dist/docsify-mermaid-zoom.js"></script>
 ```
 
-By default, zoom is only enabled on mermaid diagramms but can be use with others types of svg.
 You can configure min/max scale and disable the zoom pannel.
 
 The pannel provide **two button**. The first button activates the zoom feature on the mermaid diagram. The second one allows to reset the zoom.
@@ -37,19 +47,22 @@ The diagram will return to its original scale once it leaves the viewport on you
 
 ### Optional configuration
 
+You can configure minimum zoom and maximum zoom.
+
+You can also disable the zoom pannel. Zoom will still work if you double click on a diagramm.
+
 ```html
 <script>
-    window.$docsify = {
-        ...,
-        mermaidZoom: {
-            elementId: ".mermaid",
-            minimumScale: 1,
-            maximumScale: 5,
-            zoomPannel: true
-        },
-        ...,
-    }
-  </script>
+  window.$docsify = {
+      ...,
+      mermaidZoom: {
+          minimumScale: 1,
+          maximumScale: 5,
+          zoomPannel: true
+      },
+      ...,
+  }
+</script>
 ```
 
 ## License

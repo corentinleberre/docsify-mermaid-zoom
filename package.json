@@ -1,6 +1,6 @@
 {
   "name": "docsify-mermaid-zoom",
-  "version": "2.2.5",
+  "version": "3.0.0",
   "type": "module",
   "main": "dist/docsify-mermaid-zoom.js",
   "repository": {
@@ -19,7 +19,6 @@
     "demo": "vite serve demo"
   },
   "devDependencies": {
-    "vite": "^4.0.1",
-    "vitest": "^0.25.7"
+    "vite": "^4.1.4"
   }
 }

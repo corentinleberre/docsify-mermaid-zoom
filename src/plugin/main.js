@@ -1,7 +1,7 @@
-import { mermaidZoom } from "./docsify-mermaid-zoom";
+import { plugin } from "./docsify-mermaid-zoom";
 
-const docsify = window.$docsify || {};
+const { mermaidZoom = {}, mermaidConfig = {} } = window.$docsify;
 
-const props = docsify.mermaidZoom || {};
+mermaidConfig.postRenderCallback = plugin(...Object.values(mermaidZoom));
 
-docsify.plugins = [].concat(docsify.plugins || [], mermaidZoom(...Object.values(props)));
+window.$docsify.mermaidConfig = mermaidConfig;

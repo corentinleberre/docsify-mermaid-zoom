@@ -18,7 +18,15 @@
     <div id="app"></div>
     <script>
       window.$docsify = {
-        name: "Docsify-mermaid-zoom"
+        name: "Docsify-mermaid-zoom",
+        mermaidConfig: {
+          querySelector: ".mermaid",
+        },
+        mermaidZoom: {
+          minimumScale: 1,
+          maximumScale: 5,
+          zoomPannel: true,
+        },
       };
     </script>
     <!-- Docsify v4 -->
@@ -28,7 +36,9 @@
     <!-- Import Mermaid -->
     <script src="//unpkg.com/mermaid/dist/mermaid.js"></script>
     <script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"></script>
-    <script>mermaid.initialize({ startOnLoad: true });</script>
+    <script>
+      mermaid.initialize({ startOnLoad: true });
+    </script>
     <!-- Import Docsify-mermaid-zoom -->
     <script src="//unpkg.com/docsify-mermaid-zoom/dist/docsify-mermaid-zoom.js"></script>
   </body>
