@@ -27,13 +27,14 @@ Add the dependencies and plugin to `index.html`
 </script>
 <!-- Import D3.js -->
 <script src="//cdn.jsdelivr.net/npm/d3@7"></script>
-<!-- Import Mermaid (⚠️ Maximum V9 for now)-->
-<script src="//cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.js"></script>
-<script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"></script>
-<script>
+<!-- Import Mermaid -->
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
   mermaid.initialize({ startOnLoad: true });
+  window.mermaid = mermaid;
 </script>
 <!-- Import Docsify-mermaid-zoom -->
+<script src="//unpkg.com/docsify-mermaid@2.0.0/dist/docsify-mermaid.js"></script>
 <script src="//unpkg.com/docsify-mermaid-zoom/dist/docsify-mermaid-zoom.js"></script>
 ```
 

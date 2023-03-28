@@ -22,6 +22,11 @@
         mermaidConfig: {
           querySelector: ".mermaid",
         },
+        mermaidZoom: {
+          minimumScale: 1,
+          maximumScale: 5,
+          zoomPannel: true,
+        },
       };
     </script>
     <!-- Docsify v4 -->
@@ -34,8 +39,7 @@
       mermaid.initialize({ startOnLoad: true });
       window.mermaid = mermaid;
     </script>
-    <script type="module" src="./plugin/main.js"></script>
     <script src="//unpkg.com/docsify-mermaid@2.0.0/dist/docsify-mermaid.js"></script>
-    <!--<script type="module" src="plugin/main.js"></script>-->
+    <script type="module" src="./plugin/main.js"></script>
   </body>
 </html>
