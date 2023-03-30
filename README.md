@@ -40,8 +40,8 @@ Add the dependencies and plugin to `index.html`
 
 You can configure min/max scale and disable the zoom pannel.
 
-The pannel provide **two button**. The first button activates the zoom feature on the mermaid diagram. The second one allows to reset the zoom.
-This pannel can be disable.
+The pannel provides **two buttons**. The first button activates the zoom feature on the mermaid diagram. The second one allows to reset the zoom.
+This pannel can be disabled.
 
 You can also activate the zoom on the diagram by **double clicking on it**.
 The diagram will return to its original scale once it leaves the viewport on your screen.
